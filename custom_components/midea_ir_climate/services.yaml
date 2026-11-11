@@ -1,0 +1,21 @@
+set_off_timer:
+  name: Set off timer
+  description: >-
+    Program the air conditioner's own off timer. The unit counts it down and
+    switches itself off; Home Assistant mirrors that. 0 cancels the timer.
+  target:
+    entity:
+      integration: midea_ir_climate
+      domain: climate
+  fields:
+    hours:
+      name: Hours
+      description: 0.5 to 24 in steps of 0.5, or 0 to cancel.
+      required: true
+      example: 2
+      selector:
+        number:
+          min: 0
+          max: 24
+          step: 0.5
+          unit_of_measurement: h
