@@ -1,12 +1,16 @@
 {
   "domain": "midea_ir_climate",
   "name": "Midea IR Climate",
-  "version": "0.1.0",
+  "codeowners": [
+    "@anbis"
+  ],
+  "dependencies": [
+    "mqtt"
+  ],
   "documentation": "https://github.com/anbis/midea-ir-climate",
-  "issue_tracker": "https://github.com/anbis/midea-ir-climate/issues",
-  "codeowners": ["@anbis"],
-  "dependencies": ["mqtt"],
-  "requirements": [],
+  "integration_type": "device",
   "iot_class": "assumed_state",
-  "integration_type": "device"
+  "issue_tracker": "https://github.com/anbis/midea-ir-climate/issues",
+  "requirements": [],
+  "version": "0.1.1"
 }
